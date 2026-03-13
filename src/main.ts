@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ConfigService } from '@nestjs/config';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { ValidationPipe } from '@nestjs/common';
+import { BadGatewayException, ValidationPipe } from '@nestjs/common';
 import { pipesErrorMessageFormatter } from './common/utils/pipes-error-message-formatter.util';
 
 async function bootstrap() {
